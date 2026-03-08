@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Insurance Cost Estimator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="widget" id="pet-insurance-widget">
+    <header class="widget-header">
+      <h2 class="widget-title">Pet Insurance Cost Estimator</h2>
+      <p class="widget-subtitle">Get a rough idea of monthly premium in seconds</p>
+    </header>
+
+    <form class="estimator-form" id="estimator-form">
+      <div class="form-group">
+        <label for="pet-type">Pet type</label>
+        <select id="pet-type" required>
+          <option value="" disabled selected>Select pet type</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="breed-size">Breed size</label>
+        <select id="breed-size" required>
+          <option value="" disabled selected>Select breed size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="pet-age">Pet age (years)</label>
+        <input type="number" id="pet-age" min="1" max="10" value="3" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="estimate-btn">Estimate Cost</button>
+    </form>
+
+    <section class="estimate-section" id="estimate-section" aria-hidden="true">
+      <div class="estimate-content">
+        <p class="estimate-label">Estimated monthly premium</p>
+        <p class="estimate-value" id="estimate-value">—</p>
+        <button type="button" class="btn btn-cta" id="quote-cta">Get your personalised quote</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

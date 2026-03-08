@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Widget Demo</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 2rem;
+      background: #faf8f6;
+    }
+    h1 { color: #5c4a4a; }
+    p { color: #6b5b5b; max-width: 40ch; }
+  </style>
+</head>
+<body>
+  <h1>Demo Page</h1>
+  <p>This page demonstrates the Fetch Pet Insurance Cost Estimator widget. The floating paw button appears in the bottom-right corner. Click it to open the calculator, estimate your monthly premium, and get a personalised quote.</p>
+  <p>Check the browser console for event logs: widget_loaded, estimate_clicked, estimate_generated, quote_cta_clicked.</p>
+
+  <script src="widget.js"></script>
+  <script>FetchWidget.init();</script>
+</body>
+</html>
