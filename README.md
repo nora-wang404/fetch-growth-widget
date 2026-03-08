@@ -9,18 +9,19 @@ This project simulates the kind of **conversion surface / growth experiment** of
 Built with plain **HTML, CSS, and JavaScript** (no frameworks).
 
 ---
+## Preview
 
-## Demo 🎬
+![Widget Demo](./demoScreenShot/step1.png)
 
-This repository includes a simple demo page that simulates how the widget could appear on a pet insurance landing page.
+The widget appears as a small floating paw button in the bottom-right corner of the page.  
+It stays unobtrusive until the user clicks it to open the estimator.
 
-Open:
+![Widget Demo](./demoScreenShot/step2.png)
+Clicking the button opens a lightweight calculator panel where users can enter basic pet details such as type, breed size, age, and gender.
 
-demo.html
+![Widget Demo](./demoScreenShot/step3.png)
+After submitting the form, the widget generates an estimated monthly premium range and provides a call-to-action to continue to a personalised quote.
 
-You will see a floating paw button in the bottom-right corner. Clicking it opens the estimator panel.
-
----
 
 ## Features 🧾
 
